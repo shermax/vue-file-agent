@@ -55,6 +55,7 @@ export declare class VueFileAgentPlugin implements Vue.PluginObject<any> {
             collection: any;
         }): void;
     }, {
+        withCredentials: boolean | undefined;
         canAddMore: boolean;
         helpTextComputed: string;
         isDeletable: boolean;
@@ -108,6 +109,7 @@ export declare class VueFileAgentPlugin implements Vue.PluginObject<any> {
             collection: any;
         }): void;
     }, {
+        withCredentials: boolean | undefined;
         canAddMore: boolean;
         helpTextComputed: string;
         isDeletable: boolean;
@@ -133,7 +135,7 @@ export declare class VueFileAgentPlugin implements Vue.PluginObject<any> {
         dismissError(): void;
     }, {
         hasLinkableUrl: boolean;
-    }, Record<"averageColor" | "deletable" | "disabled" | "editable" | "errorText" | "linkable" | "thumbnailSize" | "value", any>>;
+    }, Record<"averageColor" | "deletable" | "disabled" | "editable" | "errorText" | "linkable" | "thumbnailSize" | "value" | "withCredentials", any>>;
     install: Vue.PluginFunction<any>;
 }
 declare const vfaPlugin: VueFileAgentPlugin;
@@ -180,6 +182,7 @@ export declare const mixin: import("vue/types/vue").ExtendedVue<_Vue, {
         collection: any;
     }): void;
 }, {
+    withCredentials: boolean | undefined;
     canAddMore: boolean;
     helpTextComputed: string;
     isDeletable: boolean;
